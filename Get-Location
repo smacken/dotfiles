@@ -1,0 +1,49 @@
+"Plugins
+
+call plug#begin()
+
+Plug 'preservim/nerdtree' 
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'sainnhe/sonokai'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+call plug#end()
+
+"Settings
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='sonokai'
+let NERDTreeShowHidden=1
+let g:NERDTreeIgnore = ['^node_modules$']
+
+"Bindings
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+
+"Base settings
+filetype plugin on
+set encoding=UTF-8
+set background=dark
+set relativenumber
+set smarttab
+set cindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+colorscheme sonokai 
