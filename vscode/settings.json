@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "FireFly Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.activityBar.visible": false,
+    "vim.smartRelativeLine": true,
+    "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+    "editor.cursorStyle": "line-thin",
+    "material-icon-theme.activeIconPack": "react",
+    "vim.neovimPath": "C:\\Users\\scott\\scoop\\apps\\neovim-nightly\\current\\bin\\nvim.exe",
+    "vim.easymotion": true,
+    "vim.enableNeovim": true,
+    "vim.highlightedyank.enable": true
+}
